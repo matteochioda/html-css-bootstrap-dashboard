@@ -1,0 +1,89 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+/* Icons */
+
+.icon-pencil {
+    height: 30px;
+    margin: 2px;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.icon-bin {
+    height: 30px;
+    margin: 2px;
+    border: 1px solid black;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+.icon-pencil:hover {
+    cursor: pointer;
+    background-color: rgb(200, 200, 200);
+}
+
+.icon-bin:hover {
+    cursor: pointer;
+    background-color: rgb(200, 200, 200);
+}
+
+
+/* Dropdown */
+
+.dropdown-layout {
+    background-color: white;
+    color: black;
+    width: 100%;
+    max-width: 100%;
+    white-space: inherit;
+    text-align: start;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+
+/* Utilities */
+
+.h-80px {
+    height: 80px;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.bs-grey {
+    --bs-secondary-color: grey;
+    --bs-body-color: black;
+}
+
+.c-white {
+    color: white !important;
+}
+
+.fs-14px {
+    font-size: 14px;
+}
+
+.fs-30px {
+    font-size: 30px;
+}
+
+.fs-30px {
+    font-size: 30px;
+}
+
+.fw-400 {
+    font-weight: 400;
+}
+
+.t-a-center {
+    text-align: center;
+}

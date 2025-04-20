@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html-css-bootstrap-dashboard</title>
+    <link rel="icon" href="img/duck.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark border-bottom border-body mb-5" data-bs-theme="dark">
+        <div class="container-fluid">
+          <img src="img/duck.png" alt="logo" class="h-80px py-1 pe-4">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Catalogo Libri</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Anagrafica Utenti</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Storico Prestiti</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Help</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2 bg-white bs-grey" type="search" placeholder="Cerca..." aria-label="Search">
+              <button class="btn btn-outline-light" type="submit">Cerca</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- /Navbar -->
+
+    <section>
+        <div class="container">
+            <div class="row">
+              <!-- Table -->
+              <div class="col-lg-9 col-md-12 col-sm-12">
+                <div class="d-flex justify-content-between mb-5">
+                    <div class="fs-30px">Catalogo Libri</div>
+                    <button type="button" class="btn btn-primary">Aggiungi Libro</button>
+                </div>
+                <table class="table table-striped fs-14px">
+                    <thead>
+                      <tr>
+                        <th scope="col">Titolo</th>
+                        <th scope="col" class="d-none d-md-table-cell">Data Prestito</th>
+                        <th scope="col">Stato</th>
+                        <th scope="col" class="text-center">Azioni</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>I Pilastri Della Terra</td>
+                        <td  class="d-none d-md-table-cell">-</td>
+                        <td><span class="badge text-bg-success">Disponibile</span></td>
+                        <td class="text-center"><img class="icon-pencil" src="img/pencil-svg.svg" alt="pencil"><img class="icon-bin" src="img/bin-svg.svg" alt="bin"></td>
+                      </tr>
+                      <tr>
+                        <td>I Promessi Sposi</td>
+                        <td class="d-none d-md-table-cell">-</td>
+                        <td><span class="badge text-bg-success">Disponibile</span></td>
+                        <td class="text-center"><img class="icon-pencil" src="img/pencil-svg.svg" alt="pencil"><img class="icon-bin" src="img/bin-svg.svg" alt="bin"></td>
+                      </tr>
+                      <tr>
+                        <td>Il Signore Degli Anelli</td>
+                        <td class="d-none d-md-table-cell">18/10/2023</td>
+                        <td><span class="badge text-bg-warning c-white">In Prestito</span></td>
+                        <td class="text-center"><img class="icon-pencil" src="img/pencil-svg.svg" alt="pencil"><img class="icon-bin" src="img/bin-svg.svg" alt="bin"></td>
+                      </tr>
+                      <tr>
+                        <td>Harry Potter E La Pietra Filosofale</td>
+                        <td class="d-none d-md-table-cell">-</td>
+                        <td><span class="badge text-bg-success">Disponibile</span></td>
+                        <td class="text-center"><img class="icon-pencil" src="img/pencil-svg.svg" alt="pencil"><img class="icon-bin" src="img/bin-svg.svg" alt="bin"></td>
+                      </tr>
+                      <tr>
+                        <td>Il Codice Da Vinci</td>
+                        <td class="d-none d-md-table-cell">-</td>
+                        <td><span class="badge text-bg-danger">Non Disponibile</span></td>
+                        <td class="text-center"><img class="icon-pencil" src="img/pencil-svg.svg" alt="pencil"><img class="icon-bin" src="img/bin-svg.svg" alt="bin"></td>
+                      </tr>
+                      <tr>
+                        <td>Shining</td>
+                        <td class="d-none d-md-table-cell">-</td>
+                        <td><span class="badge text-bg-success">Disponibile</span></td>
+                        <td class="text-center"><img class="icon-pencil" src="img/pencil-svg.svg" alt="pencil"><img class="icon-bin" src="img/bin-svg.svg" alt="bin"></td>
+                      </tr>
+                      <tr>
+                        <td>La Divina Commedia</td>
+                        <td class="d-none d-md-table-cell">21/09/2023</td>
+                        <td><span class="badge text-bg-warning c-white">In Prestito</span></td>
+                        <td class="text-center"><img class="icon-pencil" src="img/pencil-svg.svg" alt="pencil"><img class="icon-bin" src="img/bin-svg.svg" alt="bin"></td>
+                      </tr>
+                      <tr>
+                        <td>Il Trono Di Spade</td>
+                        <td class="d-none d-md-table-cell">-</td>
+                        <td><span class="badge text-bg-success">Disponibile</span></td>
+                        <td class="text-center"><img class="icon-pencil" src="img/pencil-svg.svg" alt="pencil"><img class="icon-bin" src="img/bin-svg.svg" alt="bin"></td>
+                      </tr>
+                      <tr>
+                        <td>Il Mondo Di Sofia</td>
+                        <td class="d-none d-md-table-cell">-</td>
+                        <td><span class="badge text-bg-danger">Non Disponibile</span></td>
+                        <td class="text-center"><img class="icon-pencil img-fluid" src="img/pencil-svg.svg" alt="pencil"><img class="icon-bin" src="img/bin-svg.svg" alt="bin"></td>
+                      </tr>
+                      <tr>
+                        <td>Le Cronache Di Narnia</td>
+                        <td class="d-none d-md-table-cell">25/07/2023</td>
+                        <td><span class="badge text-bg-warning c-white">In Prestito</span></td>
+                        <td class="text-center"><img class="icon-pencil" src="img/pencil-svg.svg" alt="pencil"><img class="icon-bin" src="img/bin-svg.svg" alt="bin"></td>
+                      </tr>
+                      <tr>
+                        <td>Il Piccolo Principe</td>
+                        <td class="d-none d-md-table-cell">-</td>
+                        <td><span class="badge text-bg-success">Disponibile</span></td>
+                        <td class="text-center"><img class="icon-pencil" src="img/pencil-svg.svg" alt="pencil"><img class="icon-bin" src="img/bin-svg.svg" alt="bin"></td>
+                      </tr>
+                      <tr>
+                        <td>La Storia Infinita</td>
+                        <td class="d-none d-md-table-cell">-</td>
+                        <td><span class="badge text-bg-success">Disponibile</span></td>
+                        <td class="text-center"><img class="icon-pencil" src="img/pencil-svg.svg" alt="pencil"><img class="icon-bin" src="img/bin-svg.svg" alt="bin"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+              </div>
+              <!-- /Table -->
+              <div class="col-lg-3 col-md-12 col-sm-12 d-flex-column">
+                <!-- Todo -->
+                <div class="card">
+                  <h5 class="card-header fs-30px fw-400 py-3">Todo</h5>
+                  <div class="card-body ">
+                    <ul class="list-group fs-14px">
+                      <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                        <label class="form-check-label" for="firstCheckbox">Chiamare segreteria</label>
+                      </li>
+                      <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+                        <label class="form-check-label" for="secondCheckbox">Mandare avvisi prestiti scaduti</label>
+                      </li>
+                      <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                        <label class="form-check-label" for="thirdCheckbox">Ordinare nuovi libri</label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- /Todo -->
+                <!-- F.A.Q. -->
+                <div class="card my-4">
+                  <h5 class="card-header fs-30px fw-400 py-3">F.A.Q.</h5>
+                  <div class="card-body">
+                    <div class="dropdown-center">
+                      <button class="btn btn-secondary dropdown-layout fs-14px border-0 d-flex justify-content-between" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Come aggiungere un nuovo libro? <span class="legal-entity-v">&#8744;</span>
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Action two</a></li>
+                        <li><a class="dropdown-item" href="#">Action three</a></li>
+                      </ul>
+                    </div>
+                    <div class="dropdown-center">
+                      <button class="btn btn-secondary dropdown-layout fs-14px border border-end-0 border-start-0 d-flex justify-content-between" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Come posso accedere all'anagrafica utenti? <span class="legal-entity-v">&#8744;</span>
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Action two</a></li>
+                        <li><a class="dropdown-item" href="#">Action three</a></li>
+                      </ul>
+                    </div>
+                    <div class="dropdown-center">
+                      <button class="btn btn-secondary dropdown-layout fs-14px border-0 d-flex justify-content-between" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Posso usare questa dashboard da mobile? <span class="legal-entity-v">&#8744;</span>
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Action two</a></li>
+                        <li><a class="dropdown-item" href="#">Action three</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <!-- /F.A.Q. -->
+              </div>
+            </div>
+          </div>
+    </section>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+
+</body>
+</html>
