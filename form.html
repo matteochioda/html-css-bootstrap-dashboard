@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html-css-bootstrap-dashboard</title>
+    <link rel="icon" href="img/duck.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark border-bottom border-body mb-5" data-bs-theme="dark">
+        <div class="container-fluid">
+          <img src="img/duck.png" alt="logo" class="h-80px py-1 pe-4">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Catalogo Libri</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Anagrafica Utenti</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Storico Prestiti</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Help</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2 bg-white bs-grey" type="search" placeholder="Cerca..." aria-label="Search">
+              <button class="btn btn-outline-light" type="submit">Cerca</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+    <!-- /Navbar -->
+
+    <!-- Form -->
+    <div class="container">
+      <div class="row">
+        <div class="fs-30px mb-5">Nuovo Libro</div>
+        <form>
+          <div class="row g-3 pb-5 border-bottom border-secondary-subtle">
+            <!-- Nome e Cognome Autore -->
+            <div class="col-6">
+              <label for="fname" class="form-label">Nome Autore</label>
+              <input type="text" class="form-control" id="fname" placeholder="Inserisci il nome dell'autore" required>
+            </div>
+            <div class="col-6">
+              <label for="lname" class="form-label">Cognome Autore</label>
+              <input type="text" class="form-control" id="lname" placeholder="Inserisci il cognome dell'autore"required>
+            </div>
+            <!-- /Nome e Cognome Autore -->
+            <!-- Titolo Libro -->
+            <div class="col-12">
+              <label for="title" class="form-label">Titolo</label>
+              <input type="text" class="form-control" id="lname" placeholder="Inserisci il titolo del libro" required>
+            </div>
+            <!-- /Titolo Libro -->
+            <!-- Genere Libro -->
+            <div class="col-md-4">
+              <label for="genre" class="form-label">Genere</label>
+              <select class="form-select" aria-label="Default select example" required>
+                <option selected disabled>Scegli il genere</option>
+                <option value="1">Avventura</option>
+                <option value="2">Biografia</option>
+                <option value="3">Commedia</option>
+                <option value="3">Epica</option>
+                <option value="3">Erotico</option>
+                <option value="3">Fantasy</option>
+                <option value="3">Giallo</option>
+                <option value="3">Horror</option>
+                <option value="3">Narrativa Storica</option>
+                <option value="3">Thriller</option>
+              </select>
+            </div>
+            <!-- /Genere Libro -->
+            <!-- Anno di Pubblicazione -->
+            <div class="col-md-4">
+              <label for="title" class="form-label required">Anno</label>
+              <input type="number" class="form-control" id="year" name="year" min="1900" placeholder="Inserisci l'anno" required>
+            </div>
+            <!-- /Anno di Pubblicazione -->
+            <!-- Codice ISBN# -->
+            <div class="col-md-4">
+              <label for="ISBN#" class="form-label">ISBN#</label>
+              <input type="text" class="form-control" id="ISBN#" placeholder="Inserisci il codice ISBN#" required>
+            </div>
+            <!-- /Codice ISBN# -->
+          </div>
+          <div class="row g-3 pt-4">
+            <!-- Note Libro -->
+            <div class="col-12">
+              <label for="note" class="form-label">Note</label>
+              <textarea class="form-control" id="note" rows="3" placeholder="Inserisci eventuali note sul libro"></textarea>
+            </div>
+            <!-- /Note Libro -->
+            <!-- Checkbox "Disponibile in digitale" -->
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  Disponibile anche in digitale
+                </label>
+              </div>
+            </div>
+            <!-- /Checkbox "Disponibile in digitale" -->
+            <!-- Submit Form  -->
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Aggiungi Libro</button>
+            </div>
+            <!-- /Submit Form  -->
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    
+</body>
+</html>
